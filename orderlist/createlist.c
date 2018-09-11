@@ -54,3 +54,10 @@ void ShowList (SeqList *L) {
     }
     printf("\n");
 }
+
+/*问题:
+01-&L和*L的区别
+
+
+
+*/
