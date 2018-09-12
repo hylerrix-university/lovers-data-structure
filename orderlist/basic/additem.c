@@ -1,8 +1,9 @@
+//date:9月11
 // 在顺序表的第i个位置插入新元素，插入失败，返回false,插入成功，表长度增加1，返回true
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>// 为了引入bool类型
-#define MaxSize 100// 表长度的初始定义
+#define MaxSize 100// 表长度的最大限制
 typedef int ElemType;// 自定义元素类型别名
 // 定义顺序表
 typedef struct {
@@ -64,7 +65,7 @@ bool ListInsert (SeqList *L,ElemType e,int i) {
     L->length++;
     return true;
 }
-
+//输出顺序表
 void ShowList (SeqList *L) {
     int i;
     printf("当前的顺序表为:\n");
