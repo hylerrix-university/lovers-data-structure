@@ -60,7 +60,8 @@ LinkList CreateList1 (LinkList L) {
 void ShowLink (LinkList L) {
     LNode *t = L->next;
     while (t != NULL) {
-        printf("%d\n", t->data);
+        printf("%d ", t->data);
         t = t->next;
     }
+    printf("\n");
 }
